@@ -12,14 +12,13 @@ Technologies Used:
 
 - HTML5: For semantic structure and content.
 - CSS3: For styling, animations, and responsive layouts.
-- JavaScript: For adding interactivity and dynamic functionality.
+- JavaScript: This is used to add interactivity and dynamic functionality.
 
 Purpose:
-This project serves as a showcase of my front-end development skills, specifically in recreating modern, professional websites using only HTML, CSS, and JavaScript.
+This project showcases my front-end development skills, specifically my ability to recreate modern, professional websites using only HTML, CSS, and JavaScript.
 
 Done by:
-João Pedro Salgado
-Guilherme Camacho
+João Pedro Salgado & Guilherme Camacho
 
 Live Demo: [[Link to live demo]](https://youtu.be/z8FUhz7zcfE)
 
