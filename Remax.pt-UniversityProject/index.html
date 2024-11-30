@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE/MAX Portugal</title>
+    <link href="estilos.css" rel="stylesheet">
+    <link rel="icon" href="src/img/icon.png">
+</head>
+<body>
+    
+
+    <div class="MainBar">
+        <img class="logo" src="src/img/logo.jpg">   
+
+        <div class="Mainbar-button">
+            <div role="button" class="Mainbar-button-set">
+                <button role="button" class="dropdown" onclick="SwitchDisplay('content')">
+                    <span class="aling">
+                        Português
+                        <img src="src/font/icon/chevron-down.svg">
+                    </span>
+                </button>
+            </div>
+            <div class="dropdown-content" id="content">
+                <div>
+                    <p>Inglês</p>
+                </div>
+                <div>
+                    <p>Português</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="List">
+            <ul>
+                <li><a href="#">Empreendimentos</a></li>
+                <li><a href="#">RE/MAX Collection</a></li>
+                <li><a href="#">Comprar</a></li>
+                <li><a href="#">Vender</a></li>
+    
+                <div class="Mainbar-button">
+                    <div role="button" class="Mainbar-button2-set hover-shadow">
+                        <div role="button" class="dropdown2">
+                            <span class="aling">
+                                Agências
+                                <img src="src/font/icon/chevron-down.svg">
+                            </span>
+                        </div>
+                        <div class="dropdown2-content">
+                            <p role="button">Procurar um Agente ou Agência</p>
+                            <p role="button">Seja um Agente RE/MAX</p>
+                            <p role="button">Franchising</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <li>
+                    <img src="src/font/icon/person-circle-icon.svg">
+                    <a href="#">Entrar</a>
+                </li>
+            </ul>
+    
+        </div>
+    </div>
+
+
+    <div class="crop">
+        <img class="background" src="src/img/background.jpg" alt = "background" >
+    </div>
+    
+    <div class="search-centralizer">
+        <div class="search-layout">
+            <div class = "Titulo">
+                <h1>Isto nunca foi tão simples!</h1>
+            </div>
+            <nav class="button-row">
+                <a class="butaocomprar" id="ButaoComprar" onclick="MudarCorBotoes(true)">Comprar</a>
+                <a class="butaoarrendar" id="ButaoArrendar" onclick="MudarCorBotoes(false)">Arrendar</a>
+            </nav>
+            <div class="search-bar">
+                <div class="search-bar-set">
+                    <input type="text" class="Pesquisa" placeholder="Onde? (Concelho ou Freguesia ou Zona ou Morada)">
+                </div>
+                <button role="button">
+                    <img src="src/font/icon/search-icon.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal-center">
+        <button class="button-down" id="DownButton" onclick="document.getElementById('AnchorPoint').scrollIntoView();">
+            <img src="src/font/icon/arrow-down.svg">
+            <p>Ver mais</p>
+        </button>
+    </div>
+    
+    <div class="home-componet">
+        <a href="#imovel-search">
+            <img class="pub" src="src/img/micrositecampaign-banner.jpg" alt = "pub" >
+        </a>
+
+    </div>
+
+    <div class="home-componet">
+        <img class="pub2" src="src/img/multimedia-banner.jpg" alt = "pub" >
+    </div>
+
+    <!--Novidade-->
+    <div class="home-componet" id="AnchorPoint">
+
+        <div class="title">
+            <h2>Novidades</h2>
+            <a class="full-list" role="button">Ver todos</a>
+            <span class="nav-buttons">
+                <button role="button" id="Preview" onclick="Preview()">
+                    <img src="src/font/icon/Preview-icon.svg">
+                </button>
+                <button role="button" id="Next">
+                    <img src="src/font/icon/Next-icon.svg">
+                </button>
+            </span>
+        </div>
+
+        <div class="scroll-ext">
+            <div class="scroll-list">
+
+                <!--Item 1-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/0b2cd55e-6286-432d-83a5-cc7476bc93d7.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">435 000€</p>
+                                        <div class="circle-heart" id ="Heart" onclick="ClicarCoracao()">
+                                            <img src="src/font/icon/heart-icon.svg" onclick="ClicarCoracao()">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Setúbal - <span>Montijo, Montijo e Afonsoeiro</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/45cb852d-8cda-41c4-ae8b-78640cad86c8.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer">
+                                <li class="type">
+                                    Duplex
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    235 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    2
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    3
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 2-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/6cbf5926-66e8-414d-b4a2-4265ecb71872.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">150 000€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Beja - <span>Odemira,São Salvador e Santa Maria</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/A_f4d012e08688424e9dfb32568da5f7f5_iList.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer">
+                                <li class="type">
+                                    Moradia
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    124 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    3
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    5
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 3-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/6974102c-019b-4a37-b1f2-1ad08123bbcd.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">208 500€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Lisboa - <span>Sintra, Sintra (Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim)</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/ec1e1577-2f66-458a-aa85-3acc2d8dc650.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer">
+                                <li class="type">
+                                 Moradia
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    88 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    2
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 4-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/1cbc63e1-5974-49a7-b153-8d72e8c329fd.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">48 840€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Leiria - <span>Alcobaça, Turquel</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/A_575a80a0b905438eaf4254a1fc161424_iList.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer">
+                                <li class="type">
+                                    Moradia
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    67 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    1
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--RE/MAX Collection-->
+    <div class="home-componet">
+
+        <div class="title">
+            <h2>RE/MAX Collection</h2>
+            <a class="full-list" role="button">Ver todos</a>
+            <span class="nav-buttons">
+                <button role="button" >
+                    <img src="src/font/icon/Preview-icon.svg">
+                </button>
+                <button role="button" >
+                    <img src="src/font/icon/Next-icon.svg">
+                </button>
+            </span>
+        </div>
+
+        <div class="scroll-ext">
+            <div class="scroll-list">
+
+                <!--Item 1-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/89bcfea0-0eb5-4799-9881-a0570e4847a5.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">650 000€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Lisboa - <span>Lisboa, Alcântara</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/2e1b1779-973a-4ace-93cc-322dfbf70e9f.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer-alt">
+                                <li class="type">
+                                    Apartamento
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    103 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    2
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 2-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/L_7395bb8b5cf14bf987751195d07f84b1.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">390 000€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Lisboa - <span>Lisboa, Santo António</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/35dbd771-a013-45b0-862c-502ce8ec8eb0.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer-alt">
+                                <li class="type">
+                                    Apartamento
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    100 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    2
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    3
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 3-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/6cc70c70-f7be-46d0-9d59-69a803696db3.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">769 000€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Lisboa - <span>Lisboa, Misericórdia</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/30e2d3c7-770a-4957-af81-26ace6e20296.jpg">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer-alt">
+                                <li class="type">
+                                    Apartamento
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    137 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    3
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    3
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 4-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="list-layout">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/L_75a3bdbb45144c87822e261f11a72d07.jpg">
+                                    <div class="image-overlay">
+                                        <p class="money">650 000€</p>
+                                        <div class="circle-heart">
+                                            <img src="src/font/icon/heart-icon.svg">
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="layout-body">
+                                <h2>Lisboa - <span>Lisboa, Alcântara</span></h2>
+                                <figure class="agente-picture">
+                                    <img src="src/img/agente/13c34ba9-0387-4e7c-8086-42f60262962e.png">
+                                </figure>
+                            </div>
+                            <ul class="layout-footer-alt">
+                                <li class="type">
+                                    Apartamento
+                                </li>
+                                <li class="area">
+                                    <img class="icon-house" src="src/font/icon/Home-icon.svg">
+                                    103 m<sup>2</sup>
+                                </li>
+                                <li class="bathroom">
+                                    <img class="icon-bath" src="src/font/icon/Bath-icon.svg">
+                                    2
+                                </li>
+                                <li class="bedroom">
+                                    <img class="icon-bed" src="src/font/icon/Bed-icon.svg">
+                                    2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Empreendimentos-->
+    <div class="home-componet">
+
+        <div class="title">
+            <h2>Empreendimentos</h2>
+            <a class="full-list" role="button">Ver todos</a>
+            <span class="nav-buttons">
+                <button role="button" >
+                    <img src="src/font/icon/Preview-icon.svg">
+                </button>
+                <button role="button" >
+                    <img src="src/font/icon/Next-icon.svg">
+                </button>
+            </span>
+        </div>
+
+        <div class="scroll-ext">
+            <div class="scroll-list">
+
+                <!--Item 1-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="layout-display">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/23b3999d-e9c6-4ed9-8ca3-fe5c7c7ea210.jpg">
+                                </figure>
+                                <div class="layout-info">
+                                    <p class="price">Desde: 650 000€</p>
+                                    <p class="local">Lisboa</p>
+                                    <ul class="companie-info">
+                                        <p class="companie-name">Mamamia</p>
+                                        <figure class="companie-picture">
+                                            <img src="src/img/companie/7bb1f8a7-a291-4c29-abb8-91e222061a3f.jpg">
+                                        </figure>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Item 2-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="layout-display">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/D_67fc485660c94f018013a80b2b5c0a7b.jpg">
+                                </figure>
+                                <div class="layout-info">
+                                    <p class="price">Sem imóveis disponíveis</p>
+                                    <p class="local">Lisboa</p>
+                                    <ul class="companie-info">
+                                        <p class="companie-name">Palacete Falcarreira - Salitre 136</p>
+                                        <figure class="companie-picture">
+                                            <img src="src/img/companie/daa9bed3-6b85-4b22-8438-24a871ccb6f8.jpg">
+                                        </figure>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--item 3-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="layout-display">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/815403e1-916b-4cf2-9c93-84127da49fbb.jpg">
+                                </figure>
+                                <div class="layout-info">
+                                    <p class="price">Desde: 1 498 000€</p>
+                                    <p class="local">Cascais</p>
+                                    <ul class="companie-info">
+                                        <p class="companie-name">PÁTEO MONTE ESTORIL</p>
+                                        <figure class="companie-picture">
+                                            <img src="src/img/companie/a97f1ef5-c3e8-4726-8c8f-72c6072c457d.jpg">
+                                        </figure>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--item 4-->
+                <div class="scroll-item">
+                    <div class="item-control">
+                        <div class="layout-display">
+                            <div class="layout-image">
+                                <figure>
+                                    <img src="src/img/preview/7ec477a4-8468-4a3d-8c28-066d08ce5472.jpg">
+                                </figure>
+                                <div class="layout-info">
+                                    <p class="price">Desde: 2 500€</p>
+                                    <p class="local">Lisboa</p>
+                                    <ul class="companie-info">
+                                        <p class="companie-name">Alvares Cabral Premium Apartments</p>
+                                        <figure class="companie-picture">
+                                            <img src="src/img/companie/134e1c45-73c1-4142-ba63-a8331b71123c.png">
+                                        </figure>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Concelhos mais procurados-->
+    <div class="home-componet">
+
+        <div class="title">
+            <h2>Concelhos mais procurados</h2>
+        </div>
+
+        <div class="grid-list">
+
+            <!--Lisboa-->
+            <div class="grid-item">
+                <div>
+                    <picture>
+                        <img class="grid-image" src="src/img/citys/lisboa_v0.jpg">
+                    </picture>
+                    <div class="grid-text">
+                        <span class="city-name">Lisboa</span>
+                        <span class="button">Ver tudo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Porto-->
+            <div class="grid-item">
+                <div class="grid-layout">
+                    <picture >
+                        <img class="grid-image" src="src/img/citys/porto_v0.jpg">
+                    </picture>
+                    <div class="grid-text">
+                        <span class="city-name">Porto</span>
+                        <span class="button">Ver tudo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Coimbra-->
+            <div class="grid-item">
+                <div class="grid-layout">
+                    <picture>
+                        <img class="grid-image" src="src/img/citys/coimbra_v0.jpg">
+                    </picture>
+                    <div class="grid-text">
+                        <span class="city-name">Coimbra</span>
+                        <span class="button">Ver tudo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Braga-->
+            <div class="grid-item">
+                <div class="grid-layout">
+                    <picture >
+                        <img class="grid-image" src="src/img/citys/braga_v0.jpg">
+                    </picture>
+                    <div class="grid-text">
+                        <span class="city-name">Braga</span>
+                        <span class="button">Ver tudo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Faro-->
+            <div class="grid-item">
+                <div class="grid-layout">
+                    <picture>
+                        <img class="grid-image" src="src/img/citys/faro_v0.jpg">
+                    </picture>
+                    <div class="grid-text">
+                        <span class="city-name">Faro</span>
+                        <span class="button">Ver tudo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Leiria-->
+            <div class="grid-item">
+                <div class="grid-layout">
+                    <picture >
+                        <img class="grid-image" src="src/img/citys/leiria_v0.jpg">
+                    </picture>
+                    <div class="grid-text">
+                        <span class="city-name">Leiria</span>
+                        <span class="button">Ver tudo</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--Agentes & Agências-->
+    <div class="home-componet">
+        <h3>Agentes & Agências</h3>
+        <div class="box-content">
+            <h2>Pessoas a falar com pessoas. Todos os dias.</h2>
+            <p>
+                Em Portugal, desde 2000, a RE/MAX Portugal tem vindo a consolidar a sua liderança. A força da marca, a eficiência do serviço e satisfação dos seus colaboradores têm vindo a ser reconhecidas e premiadas anualmente por várias entidades. Em Portugal, a RE/MAX é ainda líder em número de transacções, agências e agentes associados.
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="src/img/Agentes & Agências-banner.jpg">
+            <div class="buttons">
+                <button class="button-agente">Encontra Agente</button>
+                <button class="button-agencia">Encontra Agência</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Empreendimentos-->
+    <div class="home-componet emp">
+        <div class="emp-img">
+            <img src="src/img/Empreendimentos-img.jpg">
+        </div>
+        <div class="emp-text">
+            <h2>Empreendimentos</h2>
+            <p>
+                Se é investidor, comprador ou até mesmo construtor consulte a nossa carteira de empreendimentos RE/MAX. Pesquise todos os empreendimentos que a RE/MAX tem em carteira.
+            </p>
+            <button>Descobrir empreendimentos</button>
+        </div>
+    </div>
+
+    <!--Pesquisas mais comuns-->
+    <div class="home-componet">
+        <h2>Pesquisas mais comuns</h2>
+        <div class="list-tabs">
+
+            <!--Apartamento-->
+            <div class="tab">
+                <input id="check0" type="checkbox">
+                <label class="lable" for="check0">
+                    Apartamento
+                    <img src="src/font/icon/chevron-down.svg">
+                </label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li>Lisboa</li>
+                        <li>Sintra</li>
+                        <li>Cascais</li>
+                        <li>Oeiras</li>
+                        <li>Porto</li>
+                        <li>Amadora</li>
+                        <li>Vila Nova de Gaia</li>
+                        <li>Almada</li>
+                        <li>Loures</li>
+                        <li>Vila Franca de Xira</li>
+                        <li>Seixal</li>
+                        <li>Odivelas</li>
+                        <li>Braga</li>
+                        <li>Portimão</li>
+                        <li>Matosinhos</li>
+                        <li>Setúbal</li>
+                        <li>Albulfeira</li>
+                        <li>Maia</li>
+                        <li>Loulé</li>
+                        <li>Gondomar</li>
+                        <li>Coimbra</li>
+                        <li>Mafra</li>
+                        <li>Leiria</li>
+                        <li>Barreiro</li>
+                        <li>Funchal</li>
+                        <li>Alenquer</li>
+                        <li>Vila Nova de Famalicão</li>
+                        <li>Faro</li>
+                        <li>Silves</li>
+                        <li>Montijo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Loja-->
+            <div class="tab">
+                <input id="check1" type="checkbox">
+                <label class="lable" for="check1">
+                    Loja
+                    <img src="src/font/icon/chevron-down.svg">
+                </label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li>Lisboa</li>
+                        <li>Sintra</li>
+                        <li>Porto</li>
+                        <li>Amadora</li>
+                        <li>Oeiras</li>
+                        <li>Loures</li>
+                        <li>Odivelas</li>
+                        <li>Almada</li>
+                        <li>Cascais</li>
+                        <li>Braga</li>
+                        <li>Seixal</li>
+                        <li>Matosinhos</li>
+                        <li>Vila Nova de Famalicão</li>
+                        <li>Vila Nova de Xira</li>
+                        <li>Setúbal</li>
+                        <li>Vila Nova de Gaia</li>
+                        <li>Guimarrães</li>
+                        <li>Portimão</li>
+                        <li>Leiria</li>
+                        <li>Faro</li>
+                        <li>Gondomar</li>
+                        <li>Albufeira</li>
+                        <li>Maia</li>
+                        <li>Viseu</li>
+                        <li>Coimbra</li>
+                        <li>Loulé</li>
+                        <li>Felgueiras</li>
+                        <li>Funchal</li>
+                        <li>Mafra</li>
+                        <li>Barreiro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Moradia-->
+            <div class="tab">
+                <input id="check2" type="checkbox">
+                <label class="lable" for="check2">
+                    Moradia
+                    <img src="src/font/icon/chevron-down.svg">
+                </label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li>Cascais</li>
+                        <li>Sintra</li>
+                        <li>Almada</li>
+                        <li>Vila Nova de Gaia</li>
+                        <li>Mafra</li>
+                        <li>Seixal</li>
+                        <li>Torres Vedra</li>
+                        <li>Vila Nova de Famalicão</li>
+                        <li>Porto</li>
+                        <li>Guimarrães</li>
+                        <li>Setúbal</li>
+                        <li>Lisboa</li>
+                        <li>Sesimba</li>
+                        <li>Loulé</li>
+                        <li>Oeiras</li>
+                        <li>Braga</li>
+                        <li>Albufeira</li>
+                        <li>Alenquer</li>
+                        <li>Évora</li>
+                        <li>Palmela</li>
+                        <li>Matosinhos</li>
+                        <li>Leiria</li>
+                        <li>Gondomar</li>
+                        <li>Loures</li>
+                        <li>Alcobaça</li>
+                        <li>Maia</li>
+                        <li>Silves</li>
+                        <li>Santarém</li>
+                        <li>Vila Franca de Xira</li>
+                        <li>Coimbra</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Terreno-->
+            <div class="tab">
+                <input id="check3" type="checkbox">
+                <label class="lable" for="check3">
+                    Terreno
+                    <img src="src/font/icon/chevron-down.svg">
+                </label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li>Sintra</li>
+                        <li>Vila Nova de Gaia</li>
+                        <li>Palmela</li>
+                        <li>Cascais</li>
+                        <li>Almada</li>
+                        <li>Mafra</li>
+                        <li>Vila Nova de Famalicão</li>
+                        <li>Sesimba</li>
+                        <li>Braga</li>
+                        <li>Loures</li>
+                        <li>Torres Vedras</li>
+                        <li>Setúbal</li>
+                        <li>Seixal</li>
+                        <li>Loulé</li>
+                        <li>Benavente</li>
+                        <li>Gondomar</li>
+                        <li>Coimbra</li>
+                        <li>Vila Franca de Xira</li>
+                        <li>Guimarrães</li>
+                        <li>Leiria</li>
+                        <li>Odivelas</li>
+                        <li>Silves</li>
+                        <li>Maia</li>
+                        <li>santa Maria da Feira</li>
+                        <li>Penafiel</li>
+                        <li>Alenquer</li>
+                        <li>Lousada</li>
+                        <li>Viseu</li>
+                        <li>Marco de Canaveses</li>
+                        <li>Lourinhã</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Área Financeira-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#07539b" fill-opacity="1" d="M0,96L40,101.3C80,107,160,117,240,101.3C320,85,400,43,480,48C560,53,640,107,720,128C800,149,880,139,960,117.3C1040,96,1120,64,1200,69.3C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+
+    <div class="blue-container">
+
+        <!--Introdução de dados do imovel-->
+        <div class="home-componet" id="imovel-search">
+
+            <div class="search-imovel-set">
+                <img src="src/img/Imovel-img.jpg" class="imovel-img">
+
+                <div class="search-imovel">
+                    <h2>Calcular o preço do imóvel</h2>
+        
+                    <div class="tipologia">
+                        <!-- <h3>Tipologia</h3> -->
+        
+                        <label for="ts">Tipologia Imóvel:</label>
+        
+                        <select name="ts" id="SeletionarT">
+                          <option value="t1" onclick="noSpam=0">T1</option>
+                          <option value="t2" onclick="noSpam=0">T2</option>
+                          <option value="t3" onclick="noSpam=0">T3</option>
+                          <option value="t4" onclick="noSpam=0">T4</option>
+                        </select> 
+                    </div>
+        
+                    <div class="area-util"id="Move">
+                        <h3>Área útil</h3>
+        
+                        <input type="range" min="1" max="100" value="1" class="slider" id="InputArea" onclick="noSpam=0">
+                        <p>Valor: <span id="DisplayArea"></span> m<sup>2</sup></p>
+                    </div>
+        
+                    <div class="idade">
+                        <h3>Idade do imóvel</h3>
+        
+                        <input type="range" min="1" max="20" value="0" class="slider" id="InputIdade" onclick="noSpam=0">
+                        <p>Valor: <span id="DisplayIdade"></span> anos</p>
+                    </div>
+        
+                    <div class="row">
+                        <div class="garagem">
+                            <h3>Garagem</h3>
+    
+                            <label class="SwitchNovo">
+                                <input type="checkbox" id = "GaragemCheck" onclick="noSpam=0">
+                                <span class="AtivarDesativar round"></span>
+                            </label>
+                            
+                        </div>
+            
+                        <div class="proximidade-tp">
+                            <h3>Proximidade de Transportes Públicos</h3>
+            
+                            <label class="SwitchNovo">
+                                <input type="checkbox" id = "TransportesCheck" onclick="noSpam=0">
+                                <span class="AtivarDesativar round"></span>
+                            </label>
+                        </div>
+                    </div>
+        
+                    <div class="calcular">
+                        <a href="#Move">
+                            <button role="button" onclick="SubmeterValores(),SwitchDisplay('cenarios')">Calcular o preço do imovel</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!--Zona de cenários-->
+        <div class="home-componet" id="cenarios">
+            <div class="cenarios">
+
+                <div class="zona_cenario" id="zona1">
+                    <h2 id="zona1nome">Zona 1</h2>
+                    <h3><span id="zona1Output"></span> €</h3>
+                    <ul class="zonaInfo">
+                        <li>
+                            €/m<sup>2</sup>: <span id="zona1InfoMoney"></span>
+                        </li>
+                        <li>
+                            Área: <span id="zona1InfoArea"></span> m<sup>2</sup>
+                        </li>
+                        <li>
+                            ***
+                        </li>
+                        <li>
+                            ***
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="zona_cenario" id="zona2">
+                    <h2 id="zona2nome">Zona 2</h2>
+                    <h3><span id="zona2Output"></span> €</h3>
+                    <ul class="zonaInfo">
+                        <li>
+                            €/m<sup>2</sup>: <span id="zona2InfoMoney"></span>
+                        </li>
+                        <li>
+                            Área: <span id="zona2InfoArea"></span> m<sup>2</sup>
+                        </li>
+                        <li>
+                            ***
+                        </li>
+                        <li>
+                            ***
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="zona_cenario" id="zona3">
+                    <h2 id="zona3nome">Zona 3</h2>
+                    <h3><span id="zona3Output"></span> €</h3>
+                    <ul class="zonaInfo">
+                        <li>
+                            €/m<sup>2</sup>: <span id="zona3InfoMoney"></span>
+                        </li>
+                        <li>
+                            Área: <span id="zona3InfoArea"></span> m<sup>2</sup>
+                        </li>
+                        <li>
+                            ***
+                        </li>
+                        <li>
+                            ***
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,202.7C320,224,400,256,480,261.3C560,267,640,245,720,208C800,171,880,117,960,106.7C1040,96,1120,128,1200,154.7C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </div>
+
+    <div class="red-container">
+
+        <!--Introdução dos dados financeiros-->
+        <div class="home-componet" id="finaça-search">
+            <div class="search-finança-set">
+
+                <form class="finanças-input">
+                    <div class="Entrada-inicial">
+                        <label>Entrada Inicial (€)</label><br>
+                        <input type="text" id="Entrada"><br>
+                    </div>
+                    <div class="Montante-financiado"id ="Move2">
+                        <label>Montante Financiado (€)</label><br>
+                        <input type="text" id="Montante"><br>
+                    </div>
+                    <div class="Prazo">
+                        <label>Prazo (Anos)</label><br>
+                        <input type="text" id="Prazo"><br>
+                    </div>
+                </form>
+                <div class="financiamento">
+                    <a href="#Move2">
+                        <button role="button" onclick="SubmeterSegundosValores()">Financiamento</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Simulação de crédito-->
+        <div class="home-componet" id="creditos">
+            <div class="creditos">
+
+                <!--BancoSantinho-->
+                <div class="zona-credito-sant" id="BancoSantinho">
+                    <div class="banco-image">
+                        <img src="src/img/bancos/Banco_Santinho.png">
+                    </div>
+                    <div class="credito-info">
+
+                        <div class="Total">
+                            <p>Montante Total: <span id="BC_Total"></span> €</p>
+                        </div>
+
+                        <div class="Emprestimo">
+                            <p>Valor do Empréstimo: <span id="BC_Emprestimo"></span> €</p>
+                        </div>
+
+                        <div class="Taxa">
+                            <p>Taxa de Juro Global: <span id="BC_Taxa"></span>%</p>
+                        </div>
+
+                        <div class="Spread">
+                            <p>Spread: <span id="BC_Spread"></span>%</p>
+                        </div>
+
+                        <div class="Entrada">
+                            <p>Entrada Inicial: <span id="BC_Entrada"></span> €</p>  
+                        </div>
+
+                        <div class="Prestação">
+                            <p>Prestação Mensal: <span id="BC_Prestacao"></span> €</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Crédio Industrial-->
+                <div class="zona-credito-cred" id="CreditoIndustrial">
+                    <div class="banco-image">
+                        <img src="src/img/bancos/Crédito_Industrial.png">
+                    </div>
+                    <div class="credito-info">
+
+                        <div class="Total">
+                            <p>Montante Total: <span id="CI_Total"></span> €</p>
+                        </div>
+
+                        <div class="Emprestimo">
+                            <p>Valor do Empréstimo: <span id="CI_Emprestimo"></span> €</p>
+                        </div>
+
+                        <div class="Taxa">
+                            <p>Taxa de Juro Global: <span id="CI_Taxa"></span>%</p>
+                        </div>
+
+                        <div class="Spread">
+                            <p>Spread: <span id="CI_Spread"></span>%</p>
+                        </div>
+
+                        <div class="Entrada">
+                            <p>Entrada Inicial: <span id="CI_Entrada"></span> €</p>  
+                        </div>
+
+                        <div class="Prestação">
+                            <p>Prestação Mensal: <span id="CI_Prestacao"></span> €</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Bancalhau-->
+                <div class="zona-credito-banc" id="Bancalhau">
+                    <div class="banco-image">
+                        <img src="src/img/bancos/Bancalhau.png">
+                    </div>
+                    <div class="credito-info">
+
+                        <div class="Total">
+                            <p>Montante Total: <span id="Banc_Total"></span> €</p>
+                        </div>
+
+                        <div class="Emprestimo">
+                            <p>Valor do Empréstimo: <span id="Banc_Emprestimo"></span> €</p>
+                        </div>
+
+                        <div class="Taxa">
+                            <p>Taxa de Juro Global: <span id="Banc_Taxa"></span>%</p>
+                        </div>
+
+                        <div class="Spread">
+                            <p>Spread: <span id="Banc_Spread"></span>%</p>
+                        </div>
+
+                        <div class="Entrada">
+                            <p>Entrada Inicial: <span id="Banc_Entrada"></span> €</p>  
+                        </div>
+
+                        <div class="Prestação">
+                            <p>Prestação Mensal: <span id="Banc_Prestacao"></span> €</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div class="row">
+            <div class="column">
+                <img class="imagem_logo2" src="src/img/remaxlogo.jpg"/> 
+                <div class="redes_sociais">
+                    <div class="circle">
+                        <img class="face" src="src/font/icon/Facbook-Icon.svg"/>
+                    </div>
+                    <div class="circle">
+                        <img class="insta" src="src/font/icon/Instagram-Icon.svg"/>
+                    </div>
+                    <div class="circle">
+                        <img class="linkedin" src="src/font/icon/Linkedin-Icon.svg"/>
+                    </div>
+                    <div class="circle">
+                        <img class="youtube" src="src/font/icon/Youtube-incon.svg"/>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer_menu">
+                <div class="columnTexto">
+                    <ul>
+                        <li>A RE/MAX</li>      
+                        <li>A RE/MAX Internacional</li>
+                        <li>A RE/MAX Europa</li>
+                        <li>Contactos</li>
+                    </ul>
+                </div>
+                <div class="columnTexto">
+                    <ul>
+                       <li>Seja um Agente</li>
+                        <li>Franchising</li>
+                        <li>Porquê RE/MAX?</li>
+                    </ul>
+                </div>
+                <div class="columnTexto">
+                    <ul>
+                    <li>Empreendimentos</li>
+                    <li>RE/MAX Collection</li>
+                </ul>
+                </div>
+            </div> 
+        </div>
+            <div class="fim">
+                <a class="fim_esquerda">© RE/MAX 2022 Direitos Reservados </a> 
+                <a class="fim_direita">Politica Privacidade | Condições de uso | Acesso aos seus dados pessoais | Declaração de Privacidade</a>
+            </div>
+    </div>
+
+    <script src="logica.js" type="text/javascript"></script>
+</body>
+</html>
